@@ -35,20 +35,21 @@ footer{background:#0e2335;color:#d7e5ec;margin-top:35px;padding:38px 0}.footer-g
 
     @media (max-width: 768px) {
   .nav {
-    display: block;
+    display: block !important;
   }
 
   .nav .logo {
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 12px;
   }
 
-  .nav nav {
+  .nav > div:not(.logo) {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 14px;
+    gap: 8px 14px;
   }
 
-  .nav nav a {
+  .nav a {
     font-size: 16px;
   }
 }
